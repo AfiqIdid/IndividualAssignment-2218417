@@ -1,0 +1,36 @@
+$("document").ready(function(){
+    $(".btn2").click(function(){
+        $(".container2").toggle()
+        $(".familymama").toggle()
+    });
+    $(".btn1").click(function(){
+        $(".container3").toggle()
+        $(".familywalid").toggle()
+    })
+    $(".div3").accordion({
+        collapsible:true,
+        animate:500,
+    });
+    $(".words1").click(function(){
+        $(".words2").toggle(1000)
+        $(".words3").hide()
+        $(".words4").hide()
+        $(".schedule1").hide()
+        $(".schedule2").hide()
+    })
+    $(".words2").click(function(){
+        $(".words3").toggle(1000)
+        $(".words4").toggle(1000)
+        $(".schedule1").hide()
+        $(".schedule2").hide()
+    })
+    $(".words3").click(function(){
+        $(".schedule1").toggle(1000)
+        $(".schedule2").hide()
+    })
+    $(".words4").click(function(){
+        $(".schedule2").toggle(1000)
+        $(".schedule1").hide()
+    })
+
+})
